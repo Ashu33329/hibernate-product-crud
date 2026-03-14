@@ -63,7 +63,7 @@ public class ProductDAO {
         Product p = session.get(Product.class, id);
 
         if (p != null) {
-            session.delete(p);
+            session.remove(p);
         }
 
         tx.commit();
